@@ -6,15 +6,16 @@
     - $ git config --global user.email "YOUR EMAIL ADDRESS"
 - Create SSH key
     - $ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
-- Start SSH Agent
+- ___Start SSH Agent and add SSH key___
     - $ eval $(ssh-agent -s)
+    - $ ssh-add id_rsa
 - Init local repos
     - $ git init
-    - $ git add README.md
+    - $ ___git add README.md___
 - Commit and push
-    - $ git commit -m "first commit"
+    - ___$ git commit -m "first commit"___
     - $ git remote add origin git@github.com:KaneGF/node.js.git
-    - $ git push -u origin master
+    - ___$ git push -u origin master___
 
 >pull
 - $ git clone git@github.com:KaneGF/node.js.git
